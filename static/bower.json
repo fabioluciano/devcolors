@@ -1,0 +1,11 @@
+{
+  "name": "DevColors",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap-css": "latest",
+    "font-awesome" : "latest",
+    "jquery": "latest",
+    "html5shiv": "latest",
+    "normalize-css": "latest"
+  }
+}

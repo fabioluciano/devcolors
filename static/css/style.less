@@ -1,0 +1,214 @@
+/* Using "*_*" palette - http://www.colourlovers.com/palette/2909529/*_* */
+@MightySlate :      #556270;    // Grey
+@ChristmasBlue :    #2A8FBD;    // Blue
+@VanillaCream :     #FCFBE3;    // Cream
+@SexOnTheFloor:     #F02311;    // Red
+@SerenityIs:        #ADD8C7;    // Green
+
+/* Using "Ocean Five" palette - http://www.colourlovers.com/palette/1473/Ocean_Five */
+@InvisibleUFO :   #00A0B0;    // Blue
+@CaribicBrown :   #6A4A3C;    // Brown
+@CaribicRed :     #CC333F;    // Red
+@CaribicSun:      #EB6841;    // Red
+@CaribicDaylight: #EDC951;    // Green
+
+
+
+@nav_bar_height: 50px;
+
+/****************************/
+/* @basic                  */
+/****************************/
+body {
+  padding-top: (@nav_bar_height + 20px);
+  // background-color: @VanillaCream;
+  .set_font(normal, 14px);
+
+  h1 {font-weight: normal}
+  .container  {width:98%};
+}
+
+/****************************/
+/* @mixins                  */
+/****************************/
+.set_font(@style: normal, @size: 14px, @font: 'Open Sans') {
+  font: @style @size @font;
+}
+.radius(@size: 10px) {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.box(@size: 10px) {
+  -webkit-box-shadow: 0 8px 6px -6px @MightySlate;
+  -moz-box-shadow: 0 8px 6px -6px @MightySlate;
+  box-shadow: 0 8px 6px -10px @MightySlate;
+  margin-bottom: 10px;
+}
+
+/****************************/
+/* nav                      */
+/****************************/
+#nav
+{
+  background-color: @InvisibleUFO;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  cursor: default;
+  box-shadow: 0 1px 10px @InvisibleUFO;
+  height: @nav_bar_height;
+  line-height: @nav_bar_height;
+  width: 100%;
+
+
+  ul { margin: 0; }
+  li { display: inline-block; margin: 0 20px 0 20px}
+  a {
+    position: relative;
+    display: block;
+    color: @VanillaCream;
+    text-decoration: none;
+    outline: 0;
+    padding: 5px;
+    .set_font(bold);
+
+    &:hover {
+      background-color: @VanillaCream;
+      color: @InvisibleUFO !important;
+      .radius;
+    }
+  }
+}
+
+#bio, #work, #portfolio, #contact { .box() }
+
+/****************************/
+/* bio                      */
+/****************************/
+
+#bio {
+  .image {
+    display: inline-block;
+    img {display: block; width: 150px; margin: 0 auto;}
+    &.me {border-radius:  80%; overflow: hidden}
+  }
+
+
+}
+
+
+ul.social
+{
+  cursor: default;
+  margin: 0;
+
+  li {
+    position: relative;
+    display: inline-block;
+    margin: 0.25em;
+    top: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.twitter     { background-color: #2DAAE4; }
+    &.facebook    { background-color: #3C5A98; }
+    &.dribbble    { background-color: #C4376B; }
+    &.linkedin    { background-color: #006599; }
+    &.tumblr      { background-color: #51718A; }
+    &.googleplus  { background-color: #DA2713; }
+    &.github      { background-color: #FAFAFA; }
+    &.rss         { background-color: #F2600B; }
+    &.instagram   { background-color: #E0D7C8; }
+    &.skype       { background-color: #10BEF1; }
+
+    a {
+      display: block;
+      text-align: center;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      outline: 0;
+      text-decoration: none;
+      color: #2E2E2E !important;
+      line-height: 24px;
+      font-size: 12px;
+      text-shadow: 1px 1px 0px rgba(255,255,255,0.1);
+
+      span {
+        display: block;
+        text-indent: -9999px;
+      }
+    }
+  }
+}
+
+/****************************/
+/* work                     */
+/****************************/
+#work {
+  h1 {
+    font-weight: 800;
+    font-size: 20pt;
+    font-family: 'Ubuntu', sans-serif;
+    color: @CaribicRed;
+    text-shadow: 1px 1px 1px #888;
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 12pt;
+    color: #888;
+  }
+  h3 {
+    color: @CaribicSun;
+  }
+
+  .box
+  {
+    background: #fff;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+}
+
+#portfolio {
+  h1 {
+    font-weight: 800;
+    font-size: 20pt;
+    font-family: 'Ubuntu', sans-serif;
+    color: @CaribicDaylight;
+    text-shadow: 1px 1px 1px #888;
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 12pt;
+    color: #888;
+  }
+  h3 {
+    color: @CaribicSun;
+  }
+
+    .box
+  {
+    background: #fff;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+}

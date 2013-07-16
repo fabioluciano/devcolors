@@ -1,0 +1,194 @@
+/* Using "*_*" palette - http://www.colourlovers.com/palette/2909529/*_* */
+/* Using "Ocean Five" palette - http://www.colourlovers.com/palette/1473/Ocean_Five */
+/****************************/
+/* @basic                  */
+/****************************/
+body {
+  padding-top: 70px;
+  font: normal 14px 'Open Sans';
+}
+body h1 {
+  font-weight: normal;
+}
+body .container {
+  width: 98%;
+}
+/****************************/
+/* @mixins                  */
+/****************************/
+/****************************/
+/* nav                      */
+/****************************/
+#nav {
+  background-color: #00a0b0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  cursor: default;
+  box-shadow: 0 1px 10px #00a0b0;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+}
+#nav ul {
+  margin: 0;
+}
+#nav li {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+}
+#nav a {
+  position: relative;
+  display: block;
+  color: #fcfbe3;
+  text-decoration: none;
+  outline: 0;
+  padding: 5px;
+  font: bold 14px 'Open Sans';
+}
+#nav a:hover {
+  background-color: #fcfbe3;
+  color: #00a0b0 !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#bio,
+#work,
+#portfolio,
+#contact {
+  -webkit-box-shadow: 0 8px 6px -6px #556270;
+  -moz-box-shadow: 0 8px 6px -6px #556270;
+  box-shadow: 0 8px 6px -10px #556270;
+  margin-bottom: 10px;
+}
+/****************************/
+/* bio                      */
+/****************************/
+#bio .image {
+  display: inline-block;
+}
+#bio .image img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+#bio .image.me {
+  border-radius: 80%;
+  overflow: hidden;
+}
+ul.social {
+  cursor: default;
+  margin: 0;
+}
+ul.social li {
+  position: relative;
+  display: inline-block;
+  margin: 0.25em;
+  top: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+ul.social li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+ul.social li.twitter {
+  background-color: #2DAAE4;
+}
+ul.social li.facebook {
+  background-color: #3C5A98;
+}
+ul.social li.dribbble {
+  background-color: #C4376B;
+}
+ul.social li.linkedin {
+  background-color: #006599;
+}
+ul.social li.tumblr {
+  background-color: #51718A;
+}
+ul.social li.googleplus {
+  background-color: #DA2713;
+}
+ul.social li.github {
+  background-color: #FAFAFA;
+}
+ul.social li.rss {
+  background-color: #F2600B;
+}
+ul.social li.instagram {
+  background-color: #E0D7C8;
+}
+ul.social li.skype {
+  background-color: #10BEF1;
+}
+ul.social li a {
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  outline: 0;
+  text-decoration: none;
+  color: #2E2E2E !important;
+  line-height: 24px;
+  font-size: 12px;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+}
+ul.social li a span {
+  display: block;
+  text-indent: -9999px;
+}
+/****************************/
+/* work                     */
+/****************************/
+#work h1 {
+  font-weight: 800;
+  font-size: 20pt;
+  font-family: 'Ubuntu', sans-serif;
+  color: #cc333f;
+  text-shadow: 1px 1px 1px #888;
+  margin: 0;
+}
+#work h2 {
+  font-weight: normal;
+  font-size: 12pt;
+  color: #888;
+}
+#work h3 {
+  color: #eb6841;
+}
+#work .box {
+  background: #fff;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#portfolio h1 {
+  font-weight: 800;
+  font-size: 20pt;
+  font-family: 'Ubuntu', sans-serif;
+  color: #edc951;
+  text-shadow: 1px 1px 1px #888;
+  margin: 0;
+}
+#portfolio h2 {
+  font-weight: normal;
+  font-size: 12pt;
+  color: #888;
+}
+#portfolio h3 {
+  color: #eb6841;
+}
+#portfolio .box {
+  background: #fff;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
